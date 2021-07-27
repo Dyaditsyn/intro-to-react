@@ -31,18 +31,18 @@ const postList = [
     iconAlt: "facebook icon",
     content: "Hurray! Facebook now connected too!!!",
     image: FB_IMAGE,
-    date: "26 июнь.",
+    date: "26 июнь",
     imageAlt: "facebook image"
   },
   {
     id: 2,
     name: "Twitter",
     icon: TWITTER_ICON,
-    nickname: "@dart_vader",
-    iconAlt: "Anakin skywalker icon",
+    nickname: "@twitter",
+    iconAlt: "twitter icon",
     content: "Greetings from twitter !!!",
     image: TWITTER_IMAGE,
-    date: "27 июль.",
+    date: "27 июль",
     imageAlt: "twwiter image"
   },
 
