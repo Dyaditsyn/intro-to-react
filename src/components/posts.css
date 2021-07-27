@@ -1,15 +1,18 @@
-.wrapper {
-    display: flex;
-    background-color: #15202B;
-    height: 100vh;
+.body,html {
+    background-color:floralwhite;
 }
 
 .post {
+    background-color: #15202B;
+    padding: 15px;
     margin: auto;
+    max-width: 900px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
 }
 
 .header {
-    margin-top: 50px;
     display: flex;
 }
 
@@ -72,6 +75,7 @@
 
 .main__img > img {
     border-radius: 40px;
+    width: 100%;
     cursor: pointer;
 }
 

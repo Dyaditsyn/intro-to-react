@@ -6,52 +6,52 @@ import { IoShareOutline} from 'react-icons/io5';
 import { FcLike} from 'react-icons/fc';
 
 const Post = (props) => {
-console.log(props)
+
     return (
-        <div className="wrapper">
-            <div className="post">
-                <header className="header">
-                    <div className="header__icon">
-                        <img src={props.author.icon} alt={props.author.iconAlt}/>
+    
+        <div className="post">
+            <header className="header">
+                <div className="header__icon">
+                    <img src={props.icon} alt={props.iconAlt}/>
+                </div>
+                <div className="header__content">
+                    <div>
+                        <span className="header__content__name">{props.name}</span>
+                        <span className="header__content__badge"><BiBadgeCheck /></span>
+                        <span className="header__content__nick-date">{props.nickname} &#183; {props.date}</span>
+                        <div className="header__content__open"> &#8249; </div>
                     </div>
-                    <div className="header__content">
-                        <div>
-                            <span className="header__content__name">{props.author.name}</span>
-                            <span className="header__content__badge"><BiBadgeCheck /></span>
-                            <span className="header__content__nick-date">{props.author.nickname} &#183; {props.date}</span>
-                            <div className="header__content__open"> &#8249; </div>
-                        </div>
-                        <p className="header__content__text">{props.content}</p>
-                    </div>
-                </header>
+                    <p className="header__content__text">{props.content}</p>
+                </div>
+            </header>
 
-                <main className="main">
-                    <div className="main__img">
-                        <img src={props.image} alt={props.imageAlt}/>
-                    </div>
-                </main>
+            <main className="main">
+                <div className="main__img">
+                    <img src={props.image} alt={props.imageAlt}/>
+                </div>
+            </main>
 
-                <footer className="footer">
-                    <div className="footer__icons">
-                        <div className="footer__icons__icon">
-                            <FaRegComment />
-                            <span className="footer__icons__text">482</span>
-                        </div>
-                        <div className="footer__icons__icon">
-                            <BiRepost />
-                            <span className="footer__icons__text">146</span>
-                        </div>
-                        <div className="footer__icons__icon">
-                            <FcLike />
-                            <span className="footer__icons__text">887</span>
-                        </div>
-                        <div className="footer__icons__icon">
-                            <IoShareOutline />
-                        </div>
+            <footer className="footer">
+                <div className="footer__icons">
+                    <div className="footer__icons__icon">
+                        <FaRegComment />
+                        <span className="footer__icons__text">482</span>
                     </div>
-                </footer>
-            </div>
+                    <div className="footer__icons__icon">
+                        <BiRepost />
+                        <span className="footer__icons__text">146</span>
+                    </div>
+                    <div className="footer__icons__icon">
+                        <FcLike />
+                        <span className="footer__icons__text">887</span>
+                    </div>
+                    <div className="footer__icons__icon">
+                        <IoShareOutline />
+                    </div>
+                </div>
+            </footer>
         </div>
+        
     )
 }
 
